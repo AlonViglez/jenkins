@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" id="mainStylesheet">
+    <link rel="stylesheet" href="styles_discapacitados.css" id="nightModeStylesheet">
+    <link rel="stylesheet" href="actividad4C.css">
+    <title>Cuestionario</title>
+</head>
+<body>
+    <button id="standardButton">Diseño Estándar</button>
+    <button id="accessibleButton">Diseño Accesible</button>
+    <section class="container_formulario">
+        <h2>Formulario en HTML</h2> <!--Titulo central-->
+        <section class="container">
+            <form action=""> <!--Seccion del primer formulario-->
+                <label for="">Nombre de usuario:</label>
+                <input type="text" id="nombre" name="nomnbre" placeholder="Nombre">
+                <a href="detalles.html">justificacion</a>
+                <br><br>
+
+                <label for="">Contraseña:</label>
+                <input type="password" id="pass" name="pass" placeholder="Contraseña">
+                <a href="detalles.html">justificacion</a>
+                <br><br>
+
+                <label for="">Repetir contraseña:</label>
+                <input type="password" id="reppass" name="reppass" placeholder="Repetir contraseña">
+                <a href="detalles.html">justificacion</a>
+                <br><br>
+                
+                <label for="">Direccion:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu direccion">
+                <a href="detalles.html">justificacion</a>
+                <br><br>
+                
+                <label for="">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="ciudad">
+                <a href="detalles.html">justificacion</a>
+                <br><br>
+                
+                <label for="">Provincia:</label>
+                <input type="text" id="provincia" name="provincia" placeholder="Provincia">
+                <a href="detalles.html">justificacion</a>
+                <br><br>
+
+                <label for="">Número de huespedes:</label>
+                <input type="number" id="numhuespedes" name="numhuespedes" placeholder="Numero de huespedes">
+                <a href="detalles.html">justificacion</a>
+                <br><br>
+            </form>
+        </section>
+        <section class="container"> <!--Seccion del segundo formulario-->
+            <h3>Servicios <a href="detalles.html">(justificacion)</a> </h3>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="aire" name="aire"><label for="aire">Aire acondicionado</label></td>
+                        <td><input type="checkbox" id="almohadas" name="almohadas"><label for="almohadas">Almohadas a la carta</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="caja" name="caja"><label for="caja">Caja fuerte</label></td>
+                        <td><input type="checkbox" id="humos" name="humos"><label for="humos">Detector de humos</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="bar" name="bar"><label for="bar">Mini bar</label></td>
+                        <td><input type="checkbox" id="mesa" name="mesa"><label for="mesa">Mesa de trabajo</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="internet" name="internet"><label for="internet">Conexion a internet</label></td>
+                        <td><input type="checkbox" id="wifi" name="wifi"><label for="wifi">WIFI</label></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <section class="container">
+            <h3>Tipo de habitación <a href="detalles.html">(justificacion)</a> </h3>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="individual" name="individual"><label for="individual">Individual</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="doble" name="doble"><label for="doble">Doble</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="suite" name="suite"><label for="suite">Suite</label></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <section class="container">
+            <h3>Pensión <a href="detalles.html">(justificación)</a> </h3>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="alojamiento" name="alojamiento"><label for="alojamiento">Alojamiento</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="desayuno" name="desayuno"><label for="desayuno">Desayuno</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="media" name="media"><label for="media">Media pensión</label></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <section>
+            <h3>Comentarios o sugerencias <a href="detalles.html">(justificación)</a> </h3>
+            <input type="text" placeholder="Comentarios" style="width: 100%; height: 65px; padding: 5px;">
+        </section>
+        <br>
+        <section>
+            <h3>E-mail contacto: <input type="email" placeholder="E-mail" style="width: 70%; height: 25px; padding: 5px;"><a href="detalles.html">(justificación)</a></h3>
+        </section>
+        <br>
+        <section><!--Seccion de politicas de privacidad-->
+            <form action="">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="politica" name="politica"><label for="politica">Acepto la política de privacidad.</label><a href="detalles.html">(justificación)</a></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <br>
+        <section><!--Seccion de botones-->
+            <form action="">
+                <button type="submit">Aceptar</button><a href="cuestionario.html"></a><a href="detalles.html">(justificación)</a>
+                <button type="submit">Rechazar</button><a href="cuestionario.html"></a><a href="detalles.html">(justificación)</a>
+            </form>
+        </section>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
